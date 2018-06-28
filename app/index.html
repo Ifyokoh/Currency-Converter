@@ -72,6 +72,15 @@
         <p>Powered by free.currencyconverterapi.com</p>
     </footer>
 
+    <script>
+            if('serviceWorker' in navigator){
+                navigator.serviceWorker
+                    .register('sw.js')
+                    .then(function(){
+                        console.log('Service Worker Registered');
+                    });
+            }
+        </script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
