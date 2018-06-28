@@ -3,7 +3,7 @@ var filesToCache = [
     '/',
     'index.html',
     'css/style.css',
-    'scripts/script.js',
+    'js/script.js',
     'bg.jpg'
 ];
 
