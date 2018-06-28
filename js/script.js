@@ -23,7 +23,7 @@ function loadCurrencies(){
     const to = document.getElementById("to").value;
     const amount = document.getElementById("amount").value;
     const result = document.getElementById("result");
-    const url = `http://free.currencyconverterapi.com/api/v5/convert?q=${from}_${to}&compact=ultra`;
+    const url = `https://free.currencyconverterapi.com/api/v5/convert?q=${from}_${to}&compact=ultra`;
     if (from.length>0 && to.length>0 && amount.length>0){
         fetch(url)
        .then((response) => response.json()) 
