@@ -47,9 +47,9 @@
     float: right;
   }
   
-  /* .row.content {
+  .row.content {
       height: 30%
-  } */
+  }
 
   footer {
     background-color: #5e7e97;

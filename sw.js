@@ -4,7 +4,8 @@ var filesToCache = [
     './index.html',
     './css/style.css',
     './js/script.js',
-    './bg.jpg'
+    './bg.jpg',
+    'https://free.currencyconverterapi.com/api/v5/currencies'
 ];
 
 self.addEventListener('install', event => {
@@ -33,14 +34,7 @@ self.addEventListener('activate', event => {
     );
 });
 
-// self.addEventListener('fetch', event => {
-//     event.respondWith(
-//         caches.match(event.request,{ignoreSearch:true})
-//         .then(response=>{
-//             return response || fetch(event.request);
-//         })
-//     );
-// });
+
 self.addEventListener('fetch', function(event) {
     event.respondWith(
       caches.match(event.request)
