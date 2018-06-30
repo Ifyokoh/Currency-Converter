@@ -1,0 +1,101 @@
+
+.panel {
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin: 70px;
+    padding: 20px;
+}
+
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+    position: relative;
+    background-image: url("../bg.jpg");
+    background-size: cover;
+    min-height: 300px;
+  }
+  
+.description {
+    color: #fff;
+    padding: 5em;
+  }
+
+.header {
+    overflow: hidden;
+    background-color: #5e7e97;
+    padding: 20px 10px;
+  }
+  
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+.header-right {
+    float: right;
+  }
+  
+  .row.content {
+      height: 30%
+  }
+
+  footer {
+    background-color: #5e7e97;
+    color: white;
+    padding: 5px;
+  }
+.left {
+      color: white;
+      padding: 2em;
+  }
+
+.right{
+      color: white;
+      text-align: right;
+      padding: 2em;
+  }
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+
+  .row.content {
+    height: auto;
+  }
+
+  .right{
+      color: white;
+      text-align: right;
+      padding: 2em;
+  } 
+
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+}
+
+
+      
+      
+      
