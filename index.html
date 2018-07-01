@@ -7,15 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/idb.js"></script>
-    <script src="js/script.js"></script>
 </head>
 
 <body onload="loadCurrencies()">
     <div class="header">
         <a href="#" class="logo">Currency Converter</a>
         <div class="header-right">
-            <a href="#">Date</a>
+            <a href="#" id="date"></a>
         </div>
     </div>
 
@@ -69,10 +67,17 @@
 
     </div>
 
-    <footer class="container-fluid text-center">
-        <p>Powered by free.currencyconverterapi.com</p>
-    </footer>
+    <div class="navbar navbar-default navbar-fixed-bottom" style="background-color:#5e7e97; color: #fff">
+        <div class="container">
+          <p class="navbar-text pull-left" style="color: #fff">
+               Powered by free.currencyconverterapi.com
+          </p>
+        </div>
+      </div>
 
+    
+    <script src="js/idb.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
