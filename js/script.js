@@ -1,3 +1,7 @@
+
+let d = Date().slice(0,21);
+document.getElementById("date").innerHTML = d;
+
 function loadCurrencies(){
     const from = document.getElementById("from");
     const to = document.getElementById("to");
@@ -9,6 +13,7 @@ function loadCurrencies(){
                 let output = "";
                 for(currency in currencies) {
                     output += `<option>${currencies[currency].id}</option>`;
+                    
                 }
                 from.innerHTML = output;
                 to.innerHTML = output;
@@ -28,10 +33,10 @@ function loadCurrencies(){
             fetch(url)
             .then((response) => response.json()) 
             .then(data => {
-                var dbPromise = idb.open('currencies', 1, function(upgradeDb){
+                var dbPromise = idb.open('currencies', 1, upgradeDb => {
                     upgradeDb.createObjectStore('rates', {keyPath: 'query'})
                 });
-                dbPromise.then(function(db){
+                dbPromise.then(db =>{
                     var tx = db.transaction('rates', 'readwrite');
                     var store = tx.objectStore('rates');
                     store.put({
