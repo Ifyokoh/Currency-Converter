@@ -6,4 +6,4 @@ A web app that converts currency from one exchange rate to another
   - In this folder, start up a simple HTTP server to serve up the site files on your local computer
   - visit the site: http://localhost:8000.
  
-###Check on the description above to view the app live.
+#### Check on the description above to view the app live.
